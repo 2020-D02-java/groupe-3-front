@@ -1,3 +1,4 @@
+import { JoBioComponent } from './jo-bio/jo-bio.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -12,23 +13,23 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { XavierComponent } from './xavier/xavier.component';
 
-export const ROUTES: Routes = [
-  { path: 'xavier', component: XavierComponent },
-];
+import { AntComponent } from './ant/ant.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
     TechComponent,
-    XavierComponent
+    XavierComponent,
+    JoBioComponent,
+    AntComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
