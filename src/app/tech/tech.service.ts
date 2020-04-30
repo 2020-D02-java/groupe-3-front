@@ -19,14 +19,14 @@ export class TechService {
   /**
    * Récupération d'un flux de liens techniques vers le backend
    */
-  listBackendLinks(): Observable<BackendLink> {
-    return merge(this.http.get(`${environment.baseUrl}${environment.apiActuator}`)
-      .pipe(
-        flatMap((actuatorData) => Object.entries(actuatorData._links)
-            .map((entry: [string, any]) => new BackendLink({name: entry[0], href: entry[1].href}))
-        )
-      ), of(new BackendLink({name: 'versions', href: `${environment.baseUrl}${environment.apiVersion}`})))
-      ;
-  }
+  // listBackendLinks(): Observable<BackendLink> {
+    // return merge(this.http.get(`${environment.baseUrl}${environment.apiActuator}`)
+    //   .pipe(
+    //     flatMap((actuatorData) => Object.entries(actuatorData._links)
+    //         .map((entry: [string, any]) => new BackendLink({name: entry[0], href: entry[1].href}))
+    //     )
+    //   ), of(new BackendLink({name: 'versions', href: `${environment.baseUrl}${environment.apiVersion}`})))
+    //   ;
+  // }
 
 }

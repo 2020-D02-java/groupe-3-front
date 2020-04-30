@@ -19,9 +19,9 @@ export class TechComponent implements OnInit {
   constructor(private _techSrv: TechService) { }
 
   ngOnInit() {
-   this._techSrv.listBackendLinks().subscribe(
-     link => this.links.push(link)
-   );
+  //  this._techSrv.listBackendLinks().subscribe(
+  //    link => this.links.push(link)
+//);
   }
 
 
