@@ -1,3 +1,4 @@
+import { JoBioComponent } from './jo-bio/jo-bio.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -12,15 +13,12 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { AntComponent } from './ant/ant.component';
 
-export const ROUTES: Routes = [
-  { path: 'ant', component: AntComponent},
-  ];
-
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
     TechComponent,
+    JoBioComponent,
     AntComponent
   ],
   imports: [
@@ -28,7 +26,7 @@ export const ROUTES: Routes = [
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
