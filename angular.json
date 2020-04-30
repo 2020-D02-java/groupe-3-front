@@ -127,10 +127,6 @@
   },
   "defaultProject": "front",
   "cli": {
-<<<<<<< HEAD
     "analytics": "5ea4ef45-f2dc-4ee7-951b-0f0276b7fac8"
-=======
-    "analytics": false
->>>>>>> master
   }
 }
