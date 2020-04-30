@@ -11,6 +11,8 @@ import {StatutConnecteService} from './auth/statut-connecte.service';
 import {AuthInterceptorService} from './auth/auth-interceptor.service';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import { XavierComponent } from './xavier/xavier.component';
+
 import { AntComponent } from './ant/ant.component';
 
 @NgModule({
@@ -18,6 +20,7 @@ import { AntComponent } from './ant/ant.component';
     AppComponent,
     AuthComponent,
     TechComponent,
+    XavierComponent,
     JoBioComponent,
     AntComponent
   ],

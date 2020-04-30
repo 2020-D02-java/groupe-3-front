@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {TechComponent} from './tech/tech.component';
 import {StatutConnecteService} from './auth/statut-connecte.service';
 import {AuthComponent} from './auth/auth.component';
+import { XavierComponent } from './xavier/xavier.component';
 
 
 const routes: Routes =  [
@@ -12,7 +13,8 @@ const routes: Routes =  [
   { path: 'tech', component: TechComponent, canActivate: [StatutConnecteService]}, // /tech accessible uniquement si connecté
   { path: 'auth', component: AuthComponent},
   {path: 'bio-jonathan', component: JoBioComponent},
-  { path: 'ant', component: AntComponent}
+  { path: 'ant', component: AntComponent},
+  { path: 'xavier', component: XavierComponent }
 ];
 
 
