@@ -14,7 +14,6 @@ import { XavierComponent } from './xavier/xavier.component';
 
 export const ROUTES: Routes = [
   { path: 'xavier', component: XavierComponent },
-  { path: '', pathMatch: 'full', redirectTo: 'xavier'}
 ];
 
 @NgModule({
