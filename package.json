@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --base-href https://github.com/2020-D02-java/groupe-3-front/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
