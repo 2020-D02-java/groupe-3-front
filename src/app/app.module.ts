@@ -1,3 +1,4 @@
+import { JoBioComponent } from './jo-bio/jo-bio.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -16,13 +17,15 @@ import {FormsModule} from '@angular/forms';
   declarations: [
     AppComponent,
     AuthComponent,
-    TechComponent
+    TechComponent,
+    JoBioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
